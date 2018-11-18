@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>6BMB6 music band</title>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 <section id="home">
 	<header>
-		<img src="obrazki/logo.png" alt="logo"/>
+		<h1>
+			<img src="obrazki/logo.png" alt="logo"/>
+		</h1>
 		<nav>
-			<ul>
-				<li><a href="#home">HOME</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#concerts">CONCERTS</a></li>
-				<li><a href="#video">VIDEO</a></li>
-				<li><a href="#photos">PHOTOS</a></li>
-				<li><a href="#contact">CONTACT</a></li>
+			<ul class="menu">
+				<li class="menu-item"><a class="menu-item-link" href="#home">HOME</a></li>
+				<li class="menu-item"><a class="menu-item-link" href="#about">ABOUT</a></li>
+				<li class="menu-item"><a class="menu-item-link" href="#concerts">CONCERTS</a></li>
+				<li class="menu-item"><a class="menu-item-link" href="#video">VIDEO</a></li>
+				<li class="menu-item"><a class="menu-item-link" href="#photos">PHOTOS</a></li>
+				<li class="menu-item"><a class="menu-item-link" href="#contact">CONTACT</a></li>
 			</ul>
 		</nav>
-		<img src="obrazki/band-member01.png" alt="band member"/>
-		<img src="obrazki/band-member02.png" alt="band member"/>
-		<img src="obrazki/band-member03.png" alt="band member"/>
-		<img src="obrazki/band-member04.png" alt="band member"/>
-		<p>KAMIL ZGONDEK</p>
-		<p>keys</p>
-		<a href="#"><img src="obrazki/fb.svg"></a>
-		<a href="#"><img src="obrazki/insta.svg"></a>
-		<a href="#"><img src="obrazki/last.svg"></a>
-		<a href="#"><img src="obrazki/yout.svg"></a>
 	</header>
+	<main>
+                <ul class="band-members">
+                    <li class="band-members__item">
+                        <img class="band-members__image" src="obrazki/band-member01.png" alt="Image of stylized keyboard player's face" />
+                        <p class="band-members__name">Kamil Zgondek</p>
+                        <p class="band-members__desc">Keyboard</p>
+                    </li>
+                    <li class="band-members__item">
+                        <img class="band-members__image" src="obrazki/band-member02.png" alt="Image of stylized vocalist's face" />
+                        <p class="band-members__name">Łukasz Furman</p>
+                        <p class="band-members__desc">Vocals</p>
+                    </li>
+                    <li class="band-members__item">
+                        <img class="band-members__image" src="obrazki/band-member03.png" alt="Image of stylized drummer's face" />
+                        <p class="band-members__name">Kamil Majewski</p>
+                        <p class="band-members__desc">Drums</p>
+                    </li>
+                    <li class="band-members__item">
+                        <img class="band-members__image" src="obrazki/band-member04.png" alt="Image of stylized bassist's face" />
+                        <p class="band-members__name">Daniel Cajzer</p>
+                        <p class="band-members__desc">Bass guitar</p>
+                    </li>
+                </ul>
 </section>
 <section id="about">
-	<h1>ABOUT</h1>
+	<h2>ABOUT</h2>
 	<img src="obrazki/band01.jpg"/>
 	<div>
-		<h2>STRAIGHT FROM LUBLIN</h2>
+		<h3>STRAIGHT FROM LUBLIN</h3>
 		<p>text</p>
 		<p>text</p>
 	</div>
 </section>
 <section id="concerts">
-	<h1>CONCERTS</h1>
-	<img src="obrazki/band02_WiechnikMarcin.jpg">
-	<img src="obrazki/band03_WiechnikMarcin.jpg">
-	<p>20.12.2018</p>
-	<p>Lublin, klub xxx</p>
-	<button>BUY TICKET</button>
-	<p>20.12.2018</p>
-	<p>Warszawa, klub yyy</p>
-	<button>BUY TICKET</button>
-	<img src="obrazki/band04_JakubBodys.jpg">
-	<img src="obrazki/band05_JakubBodys.jpg">
-	<p>20.12.2018</p>
-	<p>Kraków, klub zzz</p>
-	<button>BUY TICKET</button>
-	<p>20.12.2018</p>
-	<p>Poznań, klub aaa</p>
-	<button>BUY TICKET</button>
+	<h2>CONCERTS</h2>
+	<article>
+		<img src="obrazki/band02_WiechnikMarcin.jpg">
+		<header>
+			<p>20.12.2018</p>
+			<p>Lublin, klub xxx</p>
+			<button>BUY TICKET</button>
+		</header>
+	</article>
+	<article>
+		<img src="obrazki/band03_WiechnikMarcin.jpg">
+		<header>
+			<p>20.12.2018</p>
+			<p>Warszawa, klub yyy</p>
+			<button>BUY TICKET</button>
+		</header>
+	</article>
+	<article>
+		<img src="obrazki/band04_JakubBodys.jpg">
+		<header>
+			<p>20.12.2018</p>
+			<p>Kraków, klub zzz</p>
+			<button>BUY TICKET</button>
+		</header>
+	</article>
+	<article>
+		<img src="obrazki/band05_JakubBodys.jpg">
+			<header>
+				<p>20.12.2018</p>
+				<p>Poznań, klub aaa</p>
+				<button>BUY TICKET</button>
+			</header>
+	</article>
 </section>
 <section id="video">
-	<h1>VIDEO</h1>
+	<h2>VIDEO</h2>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 <section id="photos">
-	<h1>PHOTOS</h1>
-	<img src="obrazki/band05_JakubBodys.jpg">
-	<img src="obrazki/band06_JakubBodys.jpg">
-	<img src="obrazki/band07.jpg">
-	<img src="obrazki/band08.jpg">
-	<img src="obrazki/band09.jpg">
-	<img src="obrazki/band10.jpg">
-	<img src="obrazki/band11.jpg">
-	<img src="obrazki/band04_JakubBodys.jpg">
-	<img src="obrazki/band03_WiechnikMarcin.jpg">
+	<h2>PHOTOS</h2>
+	<ul>
+		<li><img src="obrazki/band05_JakubBodys.jpg"></li>
+		<li><img src="obrazki/band06_JakubBodys.jpg"></li>
+		<li><img src="obrazki/band07.jpg"></li>
+		<li><img src="obrazki/band08.jpg"></li>
+		<li><img src="obrazki/band09.jpg"></li>
+		<li><img src="obrazki/band10.jpg"></li>
+		<li><img src="obrazki/band11.jpg"></li>
+		<li><img src="obrazki/band04_JakubBodys.jpg"></li>
+		<li><img src="obrazki/band03_WiechnikMarcin.jpg"></li>
+	</ul>
 </section>
 <section id="contact">
-	<h1>CONTACT</h1>
+	<h2>CONTACT</h2>
 	<img src="obrazki/band09.jpg"/>
 	<p>Tel: 00 48 999 00 00</p>
 	<p>e-mail: 6bmband@mail.mail</p>
@@ -88,4 +123,5 @@
 
 </section>
 </body>
+</main>
 </html>

@@ -1,0 +1,42 @@
+header {
+	position: fixed;
+	margin: 15px;
+}
+
+
+#home {
+	min-height: 100vh;
+}
+#about {
+	min-height: 100vh;
+}
+#concerts {
+	min-height: 100vh;
+}
+#videos {
+	min-height: 100vh;
+}
+#photos {
+	min-height: 100vh;
+}
+
+#contact {
+	min-height: 100vh;
+}
+.menu-item {
+	list-style-type: none;
+}
+
+.menu-item-link {
+	text-decoration: none;
+}
+
+.band-members {
+	top-margin: 50px;
+}
+
+.band-members__item {
+	float:left;
+    
+}
+
